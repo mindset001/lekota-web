@@ -1,0 +1,1697 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Global styles */
+
+div.store a img {
+  width: 110px;
+  height: 40px;
+}
+
+.whiteActive {
+  height: 6px;
+  width: 20px;
+  border-radius: 30px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.blueActive {
+  height: 6px;
+  width: 20px;
+  border-radius: 30px;
+  background-color: #78a0ff;
+  margin: 0 auto;
+}
+
+button:active,
+a:active,
+a:focus,
+button:focus {
+  border: none;
+  outline: none;
+}
+
+/* ------------------- */
+
+/* Header styles */
+header#home {
+  background-color: #78a0ff;
+  width: 100%;
+  height: 100px;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header#home button#menuButtonHome {
+  display: none;
+}
+
+header#home div.homeLinksList {
+  display: none;
+}
+
+header#home a img.whiteLogo {
+  width: 160px;
+  height: 100px;
+}
+
+header#home div#homeLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 45%;
+  align-items: center;
+}
+
+header#home div#homeLinks a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  height: 30px;
+}
+
+header#home div#homeLinks a p {
+  margin-bottom: 8px;
+}
+
+header#home div#homeLinks button {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: #78a0ff;
+  width: 100px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+/* --------------------------------------------------------- */
+
+/* feature and about Header styles */
+header#features {
+  background-color: #eef2fd;
+  width: 100%;
+  height: 100px;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+}
+
+header#features button#menuButtonHome {
+  display: none;
+}
+
+header#features div.homeLinksList {
+  display: none;
+}
+
+header#features a img.whiteLogo {
+  width: 160px;
+  height: 100px;
+}
+
+header#features div#homeLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 35%;
+  align-items: center;
+}
+
+header#features div#homeLinks a {
+  color: #78a0ff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  height: 30px;
+}
+
+header#features div#homeLinks a p {
+  margin-bottom: 8px;
+}
+
+header#features div#homeLinks button {
+  border: none;
+  outline: none;
+  background-color: #78a0ff;
+  color: #fff;
+  width: 100px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  transition: all ease 3s;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+/* Body */
+main#featuresMain section.explainHow {
+  text-align: center;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main#featuresMain section.explainHow h1 {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 34px;
+  font-weight: bold;
+}
+
+main#featuresMain section.explainHow p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  width: 64%;
+}
+main#featuresMain section.explainHow p:nth-child(3) {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  width: 64%;
+  margin: 5px auto;
+  font-weight: bold;
+}
+main#featuresMain section#details {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+}
+
+main#featuresMain section#details div#numbers {
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+  text-align: center;
+  margin-top: 50px;
+}
+main#featuresMain section#details div#numbers div {
+  margin: 35px 0px 35px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main#featuresMain section#details div#numbers div:nth-child(3),
+main#featuresMain section#details div#numbers div:nth-child(4) {
+  display: none;
+}
+main#featuresMain section#details div#numbers div p {
+  width: 60%;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  margin-top: 10px;
+}
+main#featuresMain section#details div#numbers img {
+  width: 40px;
+  height: 40px;
+}
+
+main#featuresMain section#details div#phoneDiv img {
+  width: auto;
+  height: 43em;
+}
+
+main#featuresMain section#forArt {
+  background: url("../assets/images/Ellipse\ 4.png") no-repeat;
+  background-position: center;
+  width: auto;
+  height: 80em;
+  margin-bottom: 0;
+}
+
+main#featuresMain section#forArt div#section {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 3em;
+}
+
+main#featuresMain section#forArt div.forArtInfo {
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+  gap: 40px;
+}
+main#featuresMain section#forArt div.forArtInfo:nth-child(2),
+main#featuresMain section#forArt div.forArtInfo:nth-child(4) {
+  flex-direction: row;
+}
+
+main#featuresMain section#forArt div.forArtInfo div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main#featuresMain section#forArt div.forArtInfo div p {
+  width: 66%;
+}
+
+main#featuresMain section#forArt button.getApp {
+  margin: 15px auto;
+  width: 150px;
+  border-radius: 20px;
+  height: 70px;
+  background: none;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #78a0ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
+}
+/* ------------------------ */
+
+/* About page */
+main#About section.explainHow {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url();
+  /* background-size: cover; */
+  background-position: center;
+  width: 100%;
+
+  border-radius: 50px;
+  position: relative;
+}
+
+main#About section.explainHow img {
+  width: 700px;
+  height: 400px;
+}
+
+div.gradientDiv {
+  background: linear-gradient(
+    31.57deg,
+    #77a1ea 1.13%,
+    rgba(119, 161, 234, 0) 79.46%
+  );
+  background-position: center;
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  opacity: 0.5;
+  border-radius: 0 0 0 600px;
+  right: 0;
+}
+
+main#About section.explainHow h1 {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 34px;
+  font-weight: bold;
+  padding: 30px;
+}
+
+main#About section.explainHow p {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  width: 64%;
+}
+main#About section.explainHow p#forMob {
+  display: none;
+}
+
+main#About section#founders {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+main#About section#founders h1 {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+main#About section#founders div#foundersGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+}
+main#About section#founders div#foundersGroup div.founderCard {
+  background-color: #fff;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+}
+main#About section#founders div#foundersGroup div.founderCard img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 10px;
+}
+
+main#About section#contactForm {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+main#About section#contactForm div#userAction {
+  width: 25%;
+  color: rgba(0, 0, 0, 0.5);
+}
+main#About section#contactForm div#userAction button {
+  background: none;
+  border: none;
+  width: 60%;
+  height: 50px;
+  color: #fff;
+  background-color: #77a1ea;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 20px;
+}
+main#About section#contactForm div#userAction p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+main#About section#contactForm div#userAction h2 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+main#About section#contactForm div#cardForm {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #fff;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+  width: 360px;
+  height: 500px;
+  justify-content: center;
+  border-radius: 14px;
+  padding: 20px;
+}
+main#About section#contactForm div#cardForm input {
+  border: none;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+}
+main#About section#contactForm div#cardForm textarea {
+  border: none;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+  height: 200px;
+  width: 100%;
+}
+main#About section#contactForm div#cardForm button {
+  background: none;
+  border: none;
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  background-color: #77a1ea;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 15px;
+}
+/* ---------------------- */
+/* --------------------------------------------------------- */
+
+/* Body of the page */
+main section#firstSection {
+  background: url("../assets/images/HomeFirstVector.png") no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 890px;
+  background-size: cover;
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 30px;
+  flex-direction: row;
+}
+
+main section#firstSection div#textDiv {
+  margin-top: 90px;
+  margin-right: 100px;
+  width: 50%;
+  padding: 20px;
+}
+main section#firstSection div#textDiv p,
+h1 {
+  color: #fff;
+}
+main section#firstSection div#textDiv h1 {
+  font-size: 1.7em;
+  font-weight: bold;
+}
+main section#firstSection div#textDiv p {
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+main section#firstSection div#textDiv p:nth-child(3) {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+main section#firstSection div#imageDiv {
+  position: absolute;
+  right: 15px;
+}
+
+main section#firstSection div#imageDiv img#firstPhones {
+  width: 650px;
+  height: 650px;
+}
+main section#firstSection div#imageDiv img#firstPhonesMob {
+  display: none;
+}
+
+main div#bottomStore {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+main div#bottomStore a {
+  margin: 10px;
+  padding: 0;
+}
+main div#store a img {
+  width: 100px;
+  height: 35px;
+}
+
+main section#secondSection {
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+}
+
+main section#secondSection h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+main section#secondSection p {
+  padding: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+main section#thirdSection {
+  background: url("../assets/images/deskThirdSec.png") no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 90em;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+main section#thirdSection div#thirdSecImgContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  margin-bottom: 12em;
+}
+
+main section#thirdSection div#thirdSecImgContainer div {
+  text-align: center;
+  width: 100%;
+}
+
+main section#thirdSection div#thirdSecImgContainer div img {
+  width: 250px;
+  height: 220px;
+}
+
+main section#thirdSection div#thirdSecImgContainer div p {
+  color: rgba(64, 64, 64, 0.75);
+  font-size: 16px;
+  width: 54.2%;
+  margin: 0 auto;
+}
+
+main section#thirdSection div#thirdSecTxtContainer {
+  margin: 30px auto;
+  text-align: center;
+  width: 100%;
+}
+
+main section#thirdSection div#thirdSecTxtContainer h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+main section#thirdSection div#thirdSecTxtContainer p {
+  padding: 30px;
+  font-size: 17px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  width: 53%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+main section#thirdSection div#lastDiv {
+  margin: 20px auto;
+}
+main section#thirdSection div#lastDiv img {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 80px;
+}
+main#featuresMain img#mob {
+  display: none;
+}
+/* ------------------------ */
+
+/* Footer */
+footer {
+  background-color: #78a0ff;
+  width: 100%;
+  height: 300px;
+  padding: 50px;
+}
+
+footer div.hyperLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer div.hyperLinks div h2 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+footer div.hyperLinks div a {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 10px;
+  display: block;
+}
+
+footer div.bottomFooter {
+  color: #fff;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+footer div.bottomFooter div.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div.bottomFooter div.socials a {
+  text-decoration: none;
+  margin-right: 2px;
+}
+
+footer div.bottomFooter div.socials a img {
+  width: 30px;
+  height: 30px;
+}
+/* --------------- */
+@media (min-width: 900px) and (max-width: 1000px) {
+  main section#firstSection {
+    background: url("../assets/images/HomeFirstVector.png") no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 590px;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 30px;
+    flex-direction: row;
+  }
+  /* second section */
+  main section#secondSection {
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 200px;
+    display: block;
+    height: 100px;
+  }
+
+  main section#secondSection h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  main section#secondSection p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* ------------- */
+
+  /* Third section */
+  main section#thirdSection {
+    background: url("../assets/images/deskThirdSec.png") no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 860px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30em;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 1em;
+    margin-top: 7em;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div img {
+    width: 130px;
+    height: 100px;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div p {
+    color: rgba(64, 64, 64, 0.75);
+    font-size: 14px;
+    width: 170px;
+    margin: 0 auto;
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer {
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 6em;
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer p:nth-child(2) {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  main section#thirdSection div#thirdSecTxtContainer p:nth-child(3) {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  main section#thirdSection div#lastDiv {
+    width: 100%;
+  }
+  main section#thirdSection div#lastDiv img {
+    width: 100%;
+    height: auto;
+  }
+
+  main div#bottomStore {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  main div#bottomStore a {
+    margin: 20px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 899px) {
+  /* Body of the page */
+  main section#firstSection {
+    background: url("../assets/images/HomeFirstVector.png") no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 590px;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 30px;
+    flex-direction: row;
+  }
+
+  main section#firstSection div#imageDiv {
+    right: 5px;
+  }
+  main section#firstSection div#imageDiv img#firstPhones {
+    width: 100%;
+    height: 500px;
+  }
+  /* second section */
+  main section#secondSection {
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 200px;
+    display: block;
+    height: 100px;
+  }
+
+  main section#secondSection h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  main section#secondSection p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* ------------- */
+
+  /* Third section */
+  main section#thirdSection {
+    background: url("../assets/images/deskThirdSec.png") no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 860px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30em;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 1em;
+    margin-top: 7em;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div img {
+    width: 130px;
+    height: 100px;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div p {
+    color: rgba(64, 64, 64, 0.75);
+    font-size: 14px;
+    width: 170px;
+    margin: 0 auto;
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer {
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 6em;
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer p:nth-child(2) {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  main section#thirdSection div#thirdSecTxtContainer p:nth-child(3) {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  main section#thirdSection div#lastDiv {
+    width: 100%;
+  }
+  main section#thirdSection div#lastDiv img {
+    width: 100%;
+    height: auto;
+  }
+
+  main div#bottomStore {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  main div#bottomStore a {
+    margin: 20px;
+    padding: 0;
+  }
+  /* ------------- */
+}
+
+/* media query for screens below 767px */
+@media screen and (max-width: 767px) {
+  /* header */
+  header#home {
+    padding: 10px;
+  }
+  header#home div#homeLinks {
+    display: none;
+  }
+  header#home button#menuButtonHome {
+    display: flex;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+  }
+  header#home button#menuButtonHome img {
+    width: 50px;
+    height: 35px;
+  }
+  header#home div.homeLinksList {
+    position: absolute;
+    top: 0;
+    background-color: #eef2fd;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    left: 0;
+    bottom: 0;
+  }
+
+  header#home div.homeLinksList a {
+    color: #78a0ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 40px 0;
+  }
+
+  header#home div.homeLinksList a:nth-child(5) {
+    background-color: #78a0ff;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
+
+  header#home div.homeLinksList button.closeMenuBtn {
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  .showMenu {
+    display: flex;
+  }
+  /* ---------------------- */
+
+  /* first section */
+  main section#firstSection {
+    background: url("../assets/images/firstSecMob.png") no-repeat;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-position: top;
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    padding: 0;
+  }
+  main section#firstSection div#textDiv {
+    text-align: center;
+    width: 100%;
+    margin: 70px auto;
+  }
+  main section#firstSection div#textDiv h1 {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  main section#firstSection div#textDiv p:nth-child(2) {
+    font-size: 15px;
+    margin: 0 auto;
+    font-weight: 500;
+    margin-bottom: 30px;
+    width: 280px;
+  }
+  main section#firstSection div#imageDiv {
+    width: 100vw;
+    padding: 0;
+    display: flex;
+    height: 400px;
+    top: 250px;
+    left: 0;
+    right: 0;
+  }
+  main section#firstSection div#imageDiv img#firstPhones {
+    display: none;
+  }
+  main section#firstSection div#imageDiv img#firstPhonesMob {
+    width: 100vw;
+    height: 500px;
+    display: block;
+    align-self: center;
+  }
+  main section#firstSection div#store {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  main section#firstSection div#store a {
+    margin: 10px;
+    padding: 0;
+  }
+  /* -------------- */
+
+  /* second section */
+  main section#secondSection {
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 200px;
+    display: block;
+    height: 10px;
+  }
+
+  main section#secondSection h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  main section#secondSection p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  /* ------------- */
+
+  /* Third section */
+  main section#thirdSection {
+    background: url("../assets/images/thirdSecMob.png") no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 830px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40em;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 1em;
+    margin-top: 7em;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div img {
+    width: 130px;
+    height: 100px;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div p {
+    color: rgba(64, 64, 64, 0.75);
+    font-size: 14px;
+    width: 170px;
+    margin: 0 auto;
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer {
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 6em;
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer p:nth-child(2) {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  main section#thirdSection div#thirdSecTxtContainer p:nth-child(3) {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  main section#thirdSection div#lastDiv {
+    width: 100%;
+  }
+  main section#thirdSection div#lastDiv img {
+    width: 100%;
+    height: auto;
+  }
+
+  main div#bottomStore {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  main div#bottomStore a {
+    margin: 20px;
+    padding: 0;
+  }
+  /* ------------- */
+
+  /* Footer */
+  footer {
+    background-color: #78a0ff;
+    width: 100%;
+    height: 500px;
+    padding: 50px;
+  }
+
+  footer div.hyperLinks {
+    display: grid;
+    margin: 20px auto;
+    grid-template-columns: 2fr 1fr;
+    row-gap: 20px;
+    justify-content: space-between;
+  }
+  /* Global styles */
+  div.store {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  div.store a img {
+    width: 150px;
+    height: 50px;
+    margin-right: 30px;
+  }
+  /* ------------------- */
+  /* ----------- */
+
+  /* features */
+  header#features {
+    padding: 10px;
+  }
+  header#features div#homeLinks {
+    display: none;
+  }
+  header#features button#menuButtonHome {
+    display: flex;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+  }
+  header#features button#menuButtonHome img {
+    width: 50px;
+    height: 35px;
+  }
+  header#features div.homeLinksList {
+    position: absolute;
+    top: 0;
+    background-color: #eef2fd;
+    height: 98vh;
+    width: 100%;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    left: 0;
+  }
+
+  header#features div.homeLinksList a {
+    color: #78a0ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 40px 0;
+  }
+
+  header#features div.homeLinksList a:nth-child(5) {
+    background-color: #78a0ff;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
+
+  header#features div.homeLinksList button.closeMenuBtn {
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  .showMenu {
+    display: flex;
+  }
+
+  main#featuresMain section.explainHow {
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main#featuresMain section.explainHow h1 {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  main#featuresMain section.explainHow p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    width: 350px;
+    margin-bottom: 10px;
+  }
+  main#featuresMain section.explainHow p:nth-child(3) {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    width: 64%;
+    margin: 5px auto;
+    font-weight: bold;
+  }
+  main#featuresMain section#details {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  main#featuresMain section#details div#phoneDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main#featuresMain section#details div#numbers {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    white-space: pre-wrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+  }
+
+  main#featuresMain section#details div#numbers.addon {
+    display: none;
+  }
+  main#featuresMain section#details div#numbers div:nth-child(3),
+  main#featuresMain section#details div#numbers div:nth-child(4) {
+    display: flex;
+  }
+
+  main#featuresMain section#details div#numbers div {
+    margin: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 100em;
+  }
+  main#featuresMain section#details div#numbers div p {
+    width: 200px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  main#featuresMain section#details div#numbers img {
+    width: 30px;
+    height: 30px;
+  }
+  main#featuresMain section#details div#phoneDiv {
+    width: 100vw;
+  }
+
+  main#featuresMain section#details div#phoneDiv img#des {
+    width: auto;
+    height: 30em;
+    overflow-x: scroll;
+  }
+
+  main#featuresMain section#forArt {
+    background: url("../assets/images/Ellipse\ 4.png") no-repeat;
+    background-position: center;
+    width: auto;
+    height: 50em;
+    margin-bottom: 0;
+  }
+
+  main#featuresMain section#forArt div#section {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-top: 3em;
+    overflow-x: scroll;
+  }
+
+  main#featuresMain section#forArt div.forArtInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    gap: 40px;
+  }
+  main#featuresMain section#forArt div.forArtInfo:nth-child(2),
+  main#featuresMain section#forArt div.forArtInfo:nth-child(4) {
+    flex-direction: column;
+  }
+
+  main#featuresMain section#forArt div.forArtInfo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main#featuresMain section#forArt div.forArtInfo div p {
+    width: 66%;
+  }
+  main#featuresMain section#forArt div.forArtInfo img.infoPhone {
+    width: auto;
+    height: 30em;
+  }
+  /* -------------------- */
+  /* About page */
+  main#About section.explainHow {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-position: center;
+    width: 100%;
+    border-radius: 50px;
+    position: relative;
+  }
+
+  main#About section.explainHow img {
+    width: 100%;
+    height: 250px;
+  }
+
+  div.gradientDiv {
+    background: linear-gradient(
+      31.57deg,
+      #77a1ea 1.13%,
+      rgba(119, 161, 234, 0) 79.46%
+    );
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    opacity: 0.5;
+    border-radius: 0 0 0 400px;
+    right: 1;
+    z-index: 0;
+  }
+
+  main#About section.explainHow h1 {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    font-weight: bold;
+    padding: 30px;
+  }
+
+  main#About section.explainHow p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    width: 350px;
+    line-height: 1.5;
+  }
+  main#About section.explainHow p#forMob {
+    display: none;
+  }
+
+  main#About section#founders {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  main#About section#founders h1 {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  main#About section#founders div#foundersGroup {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  main#About section#founders div#foundersGroup div.founderCard {
+    background-color: #fff;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+  }
+  main#About section#founders div#foundersGroup div.founderCard img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+  }
+
+  main#About section#contactForm {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  main#About section#contactForm div#userAction {
+    width: 100%;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  main#About section#contactForm div#userAction button {
+    background: none;
+    border: none;
+    width: 60%;
+    height: 50px;
+    color: #fff;
+    background-color: #77a1ea;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  main#About section#contactForm div#userAction p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  main#About section#contactForm div#userAction h2 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  main#About section#contactForm div#cardForm {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #fff;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    height: 500px;
+    justify-content: center;
+    border-radius: 14px;
+    padding: 20px;
+  }
+  main#About section#contactForm div#cardForm input {
+    border: none;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+  }
+  main#About section#contactForm div#cardForm textarea {
+    border: none;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    height: 200px;
+    width: 100%;
+  }
+  main#About section#contactForm div#cardForm button {
+    background: none;
+    border: none;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    background-color: #77a1ea;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  /* ---------------------- */
+}
+@media screen and (min-width: 445px) and (max-width: 765px) {
+  /* Third section */
+  main section#thirdSection {
+    background: url("../assets/images/thirdSecMob.png") no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 1530px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20em;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 1em;
+    margin-top: 7em;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div img {
+    width: 130px;
+    height: 100px;
+  }
+
+  main section#thirdSection div#thirdSecImgContainer div p {
+    color: rgba(64, 64, 64, 0.75);
+    font-size: 14px;
+    width: 170px;
+    margin: 0 auto;
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer {
+    margin: 30px auto;
+    text-align: center;
+    width: 100%;
+    margin-top: 6em;
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  main section#thirdSection div#thirdSecTxtContainer p:nth-child(2) {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  main section#thirdSection div#thirdSecTxtContainer p:nth-child(3) {
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  main section#thirdSection div#lastDiv {
+    width: 100%;
+  }
+  main section#thirdSection div#lastDiv img {
+    width: 100%;
+    height: auto;
+  }
+
+  main div#bottomStore {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  main div#bottomStore a {
+    margin: 20px;
+    padding: 0;
+  }
+  /* ------------- */
+}
+/* -------- */
